@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { supabase } from "./createClient.jsx"
 import { useState , useEffect } from "react"
 import Loader from "./Loader.jsx"
-import LogIn from "./logIn.jsx"
+import SignIn from "./SignIn.jsx"
 import Home from './Home.jsx';
 import Admin from './Admin.jsx';
 import ProtectedRoute from './operations/ProtectedRoute.jsx';
@@ -42,8 +42,8 @@ function App() {
   <Route path="/" element={<Home members={membersData} />} />
 
   <Route
-    path="/login"
-    element={<LogIn />}
+    path="/SignIn"
+    element={<SignIn />}
   />
 
   <Route

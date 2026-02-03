@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "./createClient.jsx";
 
-const LogIn = () => {
+const SignIn = () => {
   const navigate = useNavigate();
 
   const [data, setData] = useState({ email: "", password: "" });
@@ -127,4 +127,4 @@ const styles = {
   },
 };
 
-export default LogIn;
+export default SignIn;

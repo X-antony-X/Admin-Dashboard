@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
-import LogIn from "./logIn.jsx"
+import SignIn from "./SignIn.jsx"
 
-function Home({ session , setSession , members}) {
+function Home({members}) {
   const styles = { 
     page: { 
       maxWidth: 900, 
@@ -121,7 +121,7 @@ function Home({ session , setSession , members}) {
           </p>
         </div>
         
-        <Link to="/logIn">
+        <Link to="/SignIn">
           <button style={styles.adminBtn}>
 دخول صفحه الادمن          
         </button>
