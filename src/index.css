@@ -1,0 +1,364 @@
+.loader {
+
+  position: relative;
+
+  width: 54px;
+
+  height: 54px;
+
+  border-radius: 10px;
+
+  margin: 200px auto;
+}
+
+
+
+.loader div {
+
+  width: 8%;
+
+  height: 24%;
+
+  background: rgb(128, 128, 128);
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 30%;
+
+  opacity: 0;
+
+  border-radius: 50px;
+
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+
+  animation: fade458 1s linear infinite;
+
+}
+
+
+
+@keyframes fade458 {
+
+  from {
+
+    opacity: 1;
+
+  }
+
+
+
+  to {
+
+    opacity: 0.25;
+
+  }
+
+}
+
+
+
+.loader .bar1 {
+
+  transform: rotate(0deg) translate(0, -130%);
+
+  animation-delay: 0s;
+
+}
+
+
+
+.loader .bar2 {
+
+  transform: rotate(30deg) translate(0, -130%);
+
+  animation-delay: -1.1s;
+
+}
+
+
+
+.loader .bar3 {
+
+  transform: rotate(60deg) translate(0, -130%);
+
+  animation-delay: -1s;
+
+}
+
+
+
+.loader .bar4 {
+
+  transform: rotate(90deg) translate(0, -130%);
+
+  animation-delay: -0.9s;
+
+}
+
+
+
+.loader .bar5 {
+
+  transform: rotate(120deg) translate(0, -130%);
+
+  animation-delay: -0.8s;
+
+}
+
+
+
+.loader .bar6 {
+
+  transform: rotate(150deg) translate(0, -130%);
+
+  animation-delay: -0.7s;
+
+}
+
+
+
+.loader .bar7 {
+
+  transform: rotate(180deg) translate(0, -130%);
+
+  animation-delay: -0.6s;
+
+}
+
+
+
+.loader .bar8 {
+
+  transform: rotate(210deg) translate(0, -130%);
+
+  animation-delay: -0.5s;
+
+}
+
+
+
+.loader .bar9 {
+
+  transform: rotate(240deg) translate(0, -130%);
+
+  animation-delay: -0.4s;
+
+}
+
+
+
+.loader .bar10 {
+
+  transform: rotate(270deg) translate(0, -130%);
+
+  animation-delay: -0.3s;
+
+}
+
+
+
+.loader .bar11 {
+
+  transform: rotate(300deg) translate(0, -130%);
+
+  animation-delay: -0.2s;
+
+}
+
+
+
+.loader .bar12 {
+
+  transform: rotate(330deg) translate(0, -130%);
+
+  animation-delay: -0.1s;
+
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl; /* ليدعم اللغة العربية */
+}
+
+.custom-form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  /*لضمانعدمخروجالـinputعنالحاوية*/:;
+  -webkit-transition: border-color 0.3s ease;
+  -moz-transition: border-color 0.3s ease;
+  -ms-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3ecf8e; /* لون supabase الأخضر الشهير */
+}
+
+/* تنسيق زر رفع الملفات */
+.file-upload {
+  position: relative;
+}
+
+#file-input {
+  display: none;
+}
+
+.file-label {
+  display: block;
+  padding: 12px;
+  background: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #555;
+}
+
+.file-label:hover {
+  background: #edfcf5;
+  border-color: #3ecf8e;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: #3ecf8e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #34b27b;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  /* 1. إخفاء رأس الجدول تماماً */
+  thead {
+    display: none;
+  }
+
+  /* 2. ضبط الحاوية الكبيرة للجدول */
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* سنترة الكروت في نص الشاشة */
+    width: 100%;
+  }
+
+  /* 3. تصميم الكارت */
+  .responsive-tr {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 90%; /* عرض الكارت بالنسبة للشاشة */
+    max-width: 350px; /* أقصى عرض عشان ميبقاش ضخم */
+    margin: 10px 0 20px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* ظل أنعم */
+    border: none;
+  }
+
+  /* 4. ضبط الخلايا داخل الكارت */
+  .responsive-tr td {
+    display: block;
+    width: 100%;
+    padding: 5px 0 !important;
+    border: none !important;
+  }
+
+  .cell-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 17px;
+    color: #333;
+  }
+
+  .mobile-label {
+    font-weight: bold;
+    color: #666;
+  }
+
+  /* 5. الصورة */
+  .avatar-mobile {
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 15px;
+    border: 3px solid #f0f0f0;
+  }
+
+  /* 6. الأزرار */
+  .actions-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+/* اخفاء الليبل في الشاشات الكبيرة */
+@media (min-width: 769px) {
+  .mobile-label {
+    display: none;
+  }
+}
