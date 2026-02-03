@@ -1,12 +1,9 @@
-import { useState , useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { supabase } from "./createClient.jsx";
-import { Route } from "react-router-dom";
 
-const LogIn = ({ state , setState}) => {
+const LogIn = () => {
   const navigate = useNavigate();
-  const [session, setSession] = useState(null);
 
   const [data, setData] = useState({ email: "", password: "" });
 
