@@ -181,7 +181,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  direction: rtl; /* ليدعم اللغة العربية */
+  direction: rtl; 
 }
 
 .custom-form {
@@ -220,7 +220,6 @@
   font-size: 16px;
   transition: border-color 0.3s ease;
   box-sizing: border-box;
-  /*لضمانعدمخروجالـinputعنالحاوية*/:;
   -webkit-transition: border-color 0.3s ease;
   -moz-transition: border-color 0.3s ease;
   -ms-transition: border-color 0.3s ease;
